@@ -13,17 +13,17 @@ public class EmployeeDto {
     private LocalDate birth_date;
     private LocalDate hire_date;
 
-    private Long departmentId;
+   // private Long departmentId;
 
-//    public Department department;
-//
-//    public Department getDepartment() {
-//        return department;
-//    }
-//
-//    public void setDepartment(Department department) {
-//        this.department = department;
-//    }
+    public Department department;
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
 
     public Long getId() {
         return id;
@@ -73,11 +73,11 @@ public class EmployeeDto {
         this.hire_date = hire_date;
     }
 
-    public Long getDepartmentId() {
-        return departmentId;
-    }
-
-    public void setDepartmentId(Long departmentId) {
-        this.departmentId = departmentId;
-    }
+//    public Long getDepartmentId() {
+//        return departmentId;
+//    }
+//
+//    public void setDepartmentId(Long departmentId) {
+//        this.departmentId = departmentId;
+//    }
 }

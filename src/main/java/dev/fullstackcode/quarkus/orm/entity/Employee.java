@@ -17,8 +17,8 @@ public class Employee extends PanacheEntity {
     public String gender;
     public LocalDate birth_date;
     public LocalDate hire_date;
+
     @ManyToOne(fetch = FetchType.LAZY)
-   // @JsonBackReference
     public Department department;
 
     public static List<Employee> findEmployeesByDepartmentId(Long departmentId) {
